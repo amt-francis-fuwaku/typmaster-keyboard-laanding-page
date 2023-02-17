@@ -1,0 +1,35 @@
+/* keyboard features*/
+
+.keyboard-feature-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 100px;
+}
+
+.feature-card {
+    padding: 1em;
+    margin-bottom: 15px;
+}
+
+.features {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto-fit, 1fr));
+    justify-content: center;
+}
+
+.feature-icon-grid,
+.feature-name-grid,
+.feature-details-grid {
+    min-width: auto;
+    min-height: auto;
+    justify-self: center;
+    text-align: center;
+}
+
+.feature-icon-grid {
+    margin-bottom: 48px;
+}
+
+.feature-name-grid {
+    margin-bottom: 24px;
+}

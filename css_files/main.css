@@ -1,0 +1,47 @@
+main {
+    max-width: auto;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 10px;
+}
+
+.overlay-image {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    align-self: self-start;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/desktop/image-phone-and-keyboard.jpg');
+}
+
+.overlay {
+    background-color: rgba(255, 156, 98, 0.697);
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.glass-keyboard-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.introductory-text-2 {
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+    margin-left: 30px;
+}
+
+.introductory-text-2 p {
+    width: 35ch;
+}
+
+.introductory-text-2 h2 {
+    width: 10ch;
+    line-height: 35px;
+}

@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 62px;
+    margin-top: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #162542;
+    background-color: #E8EFF2;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    padding: 0.8em;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #162542;
+    cursor: pointer;
+}
