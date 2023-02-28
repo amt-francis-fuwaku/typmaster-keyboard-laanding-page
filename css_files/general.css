@@ -1,3 +1,5 @@
+/* reset and typography */
+
 html {
     font-size: 62.5%;
 }
@@ -71,10 +73,51 @@ p {
 
 /*VERY SMALL SCREEN*/
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     .gray_box_1,
     .gray_box_2 {
         display: none;
+    }
+    main {
+        max-width: auto;
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: 34% 64%;
+    }
+    .overlay-image {
+        border-radius: 20px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
+        height: 100%;
+    }
+    .overlay {
+        background-color: rgba(255, 156, 98, 0.697);
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .introductory-text-2 h2 {
+        margin-top: 45px;
+        margin-left: 20px;
+        text-align: justify;
+    }
+    .introductory-text-2 p {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    h1 {
+        text-align: justify;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 900;
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #162542;
+        margin: 0;
     }
 }
 
@@ -89,66 +132,88 @@ p {
     image {
         display: block;
     }
-    .introductory-text-2 h2 {
-        margin: 30px auto;
-        display: block;
-        text-align: justify;
-    }
-    .introductory-text-2 p {
-        margin-top: 20px;
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-    }
-}
-
-
-/*MEDIUM SCREENS*/
-
-@media screen and (min-width: 768px) {
-    .gray_box_1,
-    .gray_box_2 {
-        display: none;
+    main {
+        max-width: auto;
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: 34% 64%;
     }
     .overlay-image {
         border-radius: 20px;
         width: 100%;
-        height: auto;
-        align-self: self-start;
         background-position: center;
         background-size: cover;
-        background-image: url('/assets/tablet/image-phone-and-keyboard.jpg');
+        background-image: url('../assets/tablet/image-phone-and-keyboard.jpg');
+        height: 100%;
     }
     .overlay {
         background-color: rgba(255, 156, 98, 0.697);
         width: 100%;
-        height: auto;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .introductory-text-2 h2 {
+        margin-top: 45px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .introductory-text-2 p {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+
+
+/*MEDIUM SCREENS --tablet*/
+
+@media screen and (min-width: 767px) and (max-width:1279px) {
+    .gray_box_1,
+    .gray_box_2 {
+        display: none;
+    }
+    main {
+        max-width: auto;
+        margin-top: 2em;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        grid-template-columns: 34% 64%;
+        column-gap: 20px;
+    }
+    .overlay-image {
+        border-radius: 20px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
+        height: 100%;
+    }
+    .overlay {
+        background-color: rgba(255, 156, 98, 0.697);
+        width: 100%;
+        height: 100%;
         border-radius: 20px;
     }
     .introductory-text-2 {
         display: flex;
         flex-direction: row;
-        grid-column: 1 / 3;
+        grid-column: 1/ 3;
+        justify-content: space-between;
+        align-items: center;
     }
     .introductory-text-2 h2 {
-        flex-grow: 1;
-        text-align: start;
-        justify-self: center;
         line-height: normal;
+        width: 5ch;
+        text-align: justify;
     }
     .introductory-text-2 p {
-        margin-top: 20px;
-        align-self: center;
-        justify-self: center;
+        width: 50ch;
         text-align: justify;
     }
 }
 
 
-/*LARGE SCREEN*/
-
-
-/*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1280 AND MAX 0F 1440*/
+/*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1280 AND ABOVE*/
 
 @media screen and (min-width:1280px) {
     body {
@@ -179,7 +244,7 @@ p {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('/assets/desktop/image-phone-and-keyboard.jpg');
+        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
     }
     .overlay {
         background-color: rgba(255, 156, 98, 0.697);
@@ -207,6 +272,9 @@ p {
     }
     /* END FEATURES */
 }
+
+
+/*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1281 AND ABOVE*/
 
 @media screen and (min-width:1281px) {
     body {
@@ -261,7 +329,7 @@ p {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('/assets/desktop/image-phone-and-keyboard.jpg');
+        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
     }
     .overlay {
         background-color: rgba(255, 156, 98, 0.697);
