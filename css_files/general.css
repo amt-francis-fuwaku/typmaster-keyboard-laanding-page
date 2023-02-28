@@ -343,6 +343,7 @@ p {
         margin-left: 0;
     }
     .introductory-text-2 {
+        text-align: left;
         display: block;
         align-self: center;
         justify-self: center;
