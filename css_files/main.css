@@ -12,11 +12,13 @@ main {
     background-position: center;
     background-size: cover;
     background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
+    mix-blend-mode: multiply;
+    opacity: 0.75;
     height: 100%;
 }
 
 .overlay {
-    background-color: rgba(255, 156, 98, 0.796);
+    background-color: #F2F2F2;
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -37,6 +39,7 @@ main {
 
 .introductory-text-2 p {
     width: 29ch;
+    text-align: left;
 }
 
 .introductory-text-2 h2 {

@@ -19,5 +19,6 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#f00aca",
-    "editor.fontFamily": "Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Monaco, 'Courier New', monospace",
+    "liveServer.settings.port": 5501
 }
