@@ -57,6 +57,7 @@ h3 {
     line-height: 28px;
     text-transform: uppercase;
     color: #162542;
+    text-align: left;
 }
 
 p {
@@ -68,6 +69,7 @@ p {
     color: #7B8BAD;
     width: auto;
     height: auto;
+    text-align: left;
 }
 
 
@@ -159,7 +161,7 @@ p {
     }
     .introductory-text-2 p {
         margin-top: 30px;
-        text-align: center;
+        text-align: left;
         margin-left: 10px;
     }
 }
@@ -282,7 +284,7 @@ p {
         margin: 0;
     }
     .page-wrapper {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
     }
     /* HERO SECTION */
