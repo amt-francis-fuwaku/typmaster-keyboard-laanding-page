@@ -125,6 +125,12 @@ p {
         color: #162542;
         margin: 0;
     }
+    .feature_text {
+        text-align: center;
+    }
+    .feature-name-grid {
+        width: 190px;
+    }
 }
 
 
@@ -177,6 +183,9 @@ p {
     }
     .feature_text {
         text-align: center;
+    }
+    .feature-name-grid {
+        width: 190px;
     }
 }
 
