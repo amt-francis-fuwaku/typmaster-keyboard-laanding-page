@@ -397,7 +397,7 @@ p {
     }
     .gray_box_1 {
         display: flex;
-        width: 12.6em;
+        width: 10.6em;
         height: 24.0em;
         background-color: #E8EFF2;
         border-top-left-radius: 20px;
@@ -455,7 +455,7 @@ p {
     }
     .gray_box_2 {
         display: flex;
-        width: 12.6em;
+        width: 10.6em;
         height: 24.0em;
         align-self: flex-end;
         background-color: #E8EFF2;
