@@ -86,24 +86,6 @@ p {
         display: grid;
         grid-template-columns: 34% 64%;
     }
-    .overlay-image {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
-        height: 100%;
-    }
-    .overlay {
-        mix-blend-mode: multiply;
-        background-color: rgb(189, 69, 0);
-        opacity: 0.9;
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
     .introductory-text-2 h2 {
         margin-top: 45px;
         margin-left: 20px;
@@ -154,24 +136,6 @@ p {
         display: grid;
         grid-template-columns: 34% 64%;
     }
-    .overlay-image {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-image: url('../assets/tablet/image-phone-and-keyboard.jpg');
-        height: 100%;
-    }
-    .overlay {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        mix-blend-mode: multiply;
-        background-color: rgb(189, 69, 0);
-        opacity: 0.9;
-        width: 100%;
-        height: 100%;
-    }
     .introductory-text-2 h2 {
         margin-top: 45px;
         margin-left: 20px;
@@ -208,22 +172,6 @@ p {
         /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
         grid-template-columns: 34% 64%;
         column-gap: 20px;
-    }
-    .overlay-image {
-        border-radius: 20px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
-        height: 100%;
-    }
-    .overlay {
-        mix-blend-mode: multiply;
-        background-color: rgb(189, 69, 0);
-        opacity: 0.9;
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
     }
     .introductory-text-2 {
         display: flex;
@@ -265,6 +213,83 @@ p {
         text-align: left;
     }
 }
+
+
+/*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1280 AND ABOVE*/
+
+@media screen and (min-width:1280px) {
+    .page-wrapper {
+        margin: 2vw;
+        padding: 1vw;
+    }
+    body {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .page-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .gray_box_1,
+    .gray_box_2 {
+        display: none;
+    }
+    /* MAIN */
+    main {
+        margin-top: 50px;
+        display: flex;
+        column-gap: 1em;
+        align-items: center;
+        justify-items: center;
+    }
+    .introductory-text-2 {
+        display: block;
+        align-self: center;
+        justify-self: center;
+    }
+    .introductory-text-2 h2 {
+        text-align: left;
+        justify-self: center;
+        margin: 0;
+    }
+    .introductory-text-2 p {
+        text-align: left;
+        justify-self: center;
+    }
+    .glass-keyboard-img {
+        width: 54.0rem;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+    /* END MAIN */
+    /* FEATURES */
+    .keyboard-feature-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-top: 100px;
+    }
+    .feature-icon-grid,
+    .feature-name-grid,
+    .feature-details-grid {
+        justify-self: flex-start;
+    }
+    .feature-icon-grid {
+        margin-bottom: 48px;
+    }
+    .feature-name-grid {
+        width: 179px;
+        text-align: left;
+    }
+    .feature-name-grid {
+        margin-bottom: 24px;
+    }
+    .feature_text {
+        text-align: left;
+    }
+}
+
+
+/*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1281 AND ABOVE*/
 
 
 /*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1280 AND ABOVE*/
@@ -397,7 +422,7 @@ p {
     }
     .gray_box_1 {
         display: flex;
-        width: 4em;
+        width: 12.6em;
         height: 24.0em;
         background-color: #E8EFF2;
         border-top-left-radius: 20px;
@@ -424,15 +449,15 @@ p {
         background-repeat: no-repeat;
         background-image: url('../assets/desktop/image-phone-and-keyboard.jpg');
     }
-    .glass-keyboard-img {
-        width: 54.0rem;
-        border-radius: 20px;
-        margin-left: 0;
-    }
     .overlay-image {
         overflow: hidden;
         background-color: #F16718;
         background-blend-mode: multiply;
+    }
+    .glass-keyboard-img {
+        width: 54.0rem;
+        border-radius: 20px;
+        margin-left: 0;
     }
     .introductory-text-2 {
         text-align: left;
