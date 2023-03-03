@@ -24,11 +24,6 @@ body {
     flex-direction: column;
 }
 
-.page-wrapper {
-    margin: 2vw;
-    padding: 1vw;
-}
-
 h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 900;
@@ -77,6 +72,10 @@ p {
 /*VERY SMALL SCREEN*/
 
 @media screen and (max-width: 320px) {
+    .page-wrapper {
+        margin: 2vw;
+        padding: 1vw;
+    }
     .gray_box_1,
     .gray_box_2 {
         display: none;
@@ -132,6 +131,10 @@ p {
 /*SMALL SCREENS */
 
 @media screen and (min-width: 360px) {
+    .page-wrapper {
+        margin: 2vw;
+        padding: 1vw;
+    }
     .gray_box_1,
     .gray_box_2 {
         display: none;
@@ -181,6 +184,10 @@ p {
 /*MEDIUM SCREENS --tablet*/
 
 @media screen and (min-width: 767px) and (max-width:1279px) {
+    .page-wrapper {
+        margin: 2vw;
+        padding: 1vw;
+    }
     .gray_box_1,
     .gray_box_2 {
         display: none;
@@ -254,6 +261,10 @@ p {
 /*MEDIA QUERY FOR SCREENS SIZE WITH MIN-WIDTH 1280 AND ABOVE*/
 
 @media screen and (min-width:1280px) {
+    .page-wrapper {
+        margin: 2vw;
+        padding: 1vw;
+    }
     body {
         box-sizing: border-box;
         margin: 0;
