@@ -88,7 +88,8 @@ p {
         grid-template-columns: 34% 64%;
     }
     .overlay-image {
-        border-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         width: 100%;
         background-position: center;
         background-size: cover;
@@ -101,7 +102,8 @@ p {
         opacity: 0.9;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     .introductory-text-2 h2 {
         margin-top: 45px;
@@ -144,7 +146,8 @@ p {
         grid-template-columns: 34% 64%;
     }
     .overlay-image {
-        border-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         width: 100%;
         background-position: center;
         background-size: cover;
@@ -152,12 +155,13 @@ p {
         height: 100%;
     }
     .overlay {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         mix-blend-mode: multiply;
         background-color: rgb(189, 69, 0);
         opacity: 0.9;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
     }
     .introductory-text-2 h2 {
         margin-top: 45px;
@@ -220,6 +224,29 @@ p {
     .introductory-text-2 p {
         width: 50ch;
         text-align: justify;
+    }
+    .keyboard-feature-section {
+        display: grid;
+        grid-template-columns: repeat(2, 334px);
+        column-gap: 40px;
+        margin-top: 100px;
+    }
+    .feature-icon-grid,
+    .feature-name-grid,
+    .feature-details-grid {
+        justify-self: flex-start;
+    }
+    .feature-details-grid {
+        width: 290px;
+    }
+    .feature-name-grid {
+        width: 179px;
+    }
+    .bluetooth {
+        width: 200px;
+    }
+    .feature_text {
+        text-align: left;
     }
 }
 
@@ -371,6 +398,12 @@ p {
         display: block;
         align-self: center;
         justify-self: center;
+        margin: 0;
+    }
+    .introductory-text-2 h2 {
+        text-align: left;
+        justify-self: center;
+        margin: 0;
     }
     .introductory-text-2 p {
         text-align: left;
@@ -389,15 +422,36 @@ p {
     }
     /* END MAIN */
     /* FEATURES */
+    /* keyboard features*/
     .keyboard-feature-section {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(334px);
+        column-gap: 45px;
         margin-top: 100px;
     }
-    .feature_text {
-        text-align: left;
+    .feature-card {
+        padding: 1em;
+        margin-bottom: 15px;
     }
-    /* END FEATURES */
+    .features {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(auto-fit, 1fr));
+        justify-content: center;
+    }
+    .feature-icon-grid,
+    .feature-name-grid,
+    .feature-details-grid {
+        justify-self: flex-start;
+    }
+    .feature-icon-grid {
+        margin-bottom: 48px;
+    }
+    .feature-name-grid {
+        width: 179px;
+    }
+    .feature-name-grid {
+        margin-bottom: 24px;
+    }
 }
 
 
