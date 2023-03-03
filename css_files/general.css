@@ -375,6 +375,10 @@ p {
         position: relative;
     }
     .left-col {
+        display: grid;
+        grid-template-rows: repeat(200px);
+    }
+    .left-col {
         width: fit-content;
     }
     .left-col h1 {
