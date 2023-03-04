@@ -173,6 +173,9 @@ p {
         grid-template-columns: 34% 64%;
         column-gap: 20px;
     }
+    .overlay-image {
+        border-radius: 20px;
+    }
     .introductory-text-2 {
         display: flex;
         flex-direction: row;

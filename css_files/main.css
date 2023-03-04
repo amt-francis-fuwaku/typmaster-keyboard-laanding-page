@@ -7,7 +7,8 @@ main {
 }
 
 .overlay-image {
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     width: 100%;
     background-position: center;
     background-size: cover;
