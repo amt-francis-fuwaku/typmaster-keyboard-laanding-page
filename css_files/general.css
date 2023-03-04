@@ -120,7 +120,7 @@ p {
 
 @media screen and (min-width: 360px) {
     .page-wrapper {
-        margin: 2vw;
+        margin: 1vw;
         padding: 1vw;
     }
     .gray_box_1,
