@@ -395,9 +395,15 @@ p {
         max-width: 100%;
         margin: 0 auto;
     }
-    .call-to-action-container {
-        display: flex;
-        justify-content: flex-start;
+    section {
+        position: relative;
+    }
+    .left-col {
+        width: fit-content;
+        margin-left: -168px;
+    }
+    .left-col h1 {
+        width: 10ch;
     }
     .orange-cta-button {
         text-decoration: none;
@@ -407,7 +413,7 @@ p {
         border: none;
         border-radius: 8px;
         font-size: 1.6rem;
-        padding: 1em;
+        padding: 1em
     }
     .gray_box_1 {
         display: flex;
